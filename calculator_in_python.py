@@ -35,10 +35,10 @@ if __name__ == "__main__":
     window = Tk()
     window.title("Calculator")
     window.configure(bg='#CEDDDB')
-    window.geometry("376x250")
+    window.geometry("450x250")
     equation = StringVar()
 
-    input_field = Entry(window,textvariable= equation)
+    input_field = Entry(window,font=("Courier New",12,'bold'),bg='powder blue',textvariable= equation)
     input_field.grid(columnspan=6, ipadx=150)
     equation.set('Enter...')
     #Buttons
